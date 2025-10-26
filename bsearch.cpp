@@ -13,7 +13,7 @@ int binarysearch(vector<int> &arr, int x){
         else
             high = mid - 1;
     }
-   return -1; // եթե չկա
+   return -1; 
 }
 int main(){
     vector<int> arr = {4,7,8,45,68,98,99,102,111};
