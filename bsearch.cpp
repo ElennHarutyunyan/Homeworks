@@ -1,11 +1,9 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
 int binarysearch(vector<int> &arr, int x){
     int low = 0;
     int high = arr.size() - 1;
-
     while(low <= high){
         int mid = low + (high - low)/2;
         if(arr[mid] == x)
@@ -15,10 +13,8 @@ int binarysearch(vector<int> &arr, int x){
         else
             high = mid - 1;
     }
-
-    return -1; // եթե չկա
+   return -1; // եթե չկա
 }
-
 int main(){
     vector<int> arr = {4,7,8,45,68,98,99,102,111};
     int x = 45;

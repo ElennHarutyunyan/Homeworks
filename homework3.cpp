@@ -14,7 +14,6 @@ int main() {
     }
     int group1[6], group2[6];
     int g1 = 0, g2 = 0;
-
     for (int i = 0; i < n; i++) {
         if ((arr[i] / bitValue) % 2 == 0)
             group1[g1++] = arr[i]; 
@@ -23,14 +22,10 @@ int main() {
     }
     int num1 = 0;
     int num2 = 0;
-
     for (int i = 0; i < g1; i++)  
         num1 ^= group1[i];
-
     for (int i = 0; i < g2; i++) 
         num2 ^= group2[i];
-
     cout << "The two unique numbers are: " << num1 << " and " << num2 << endl;
-
     return 0;
 }
